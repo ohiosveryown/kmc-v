@@ -9,10 +9,37 @@ body {
   width: 100%;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s
+/*
+.fade-enter-active {
+  transition: opacity 500ms;
+  transition-delay: 500ms;
 }
 
 .fade-enter, .fade-leave-to {
-  opacity: 0
+  opacity: 0;
+}
+*/
+
+
+.fade {
+//  transition: $ease;
+//  opacity: 1;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-to {
+  transition: $ease-slow;
+  transition-delay: 400ms;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transition: $ease-slow;
 }
