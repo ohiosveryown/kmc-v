@@ -141,14 +141,14 @@ hr {
 
 html {
   box-sizing: border-box;
-  overflow-x: hidden;
   font-size: 62.5%;
   font-smoothing: antialiased !important;
   text-rendering: optimizeLegibility !important;
+  overflow-x: hidden;
 }
 
 body {
-  color: #2C2B2E;
+  color: #fff;
   font: 300 1.4em/1.6 sans-serif;
   overflow-x: hidden;
   margin: 0;

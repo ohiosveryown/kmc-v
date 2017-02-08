@@ -1,3 +1,4 @@
+<!-- template -->
 <template>
   <transition name="fade">
     <div class="hello">
@@ -7,6 +8,14 @@
   </transition>
 </template>
 
+
+<!-- styles -->
+<style lang="scss" scoped>
+
+</style>
+
+
+<!-- script -->
 <script>
 export default {
   name: 'hello',
@@ -17,8 +26,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-
-</style>

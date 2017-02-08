@@ -1,3 +1,4 @@
+<!-- template -->
 <template>
   <div id="app">
     <router-link to="/" exact><a>Home</a></router-link>
@@ -6,12 +7,16 @@
   </div>
 </template>
 
+
+<!-- styles -->
+<style lang="scss" scoped>
+
+</style>
+
+
+<!-- script -->
 <script>
 export default {
   name: 'app'
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
