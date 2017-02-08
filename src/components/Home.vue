@@ -1,10 +1,7 @@
 <!-- template -->
 <template>
   <transition name="fade">
-    <div class="hello">
-      <h1>{{ msg }}</h1>
-      <h2>Essential Linksssss</h2>
-    </div>
+    <h2>Essential Linksssss</h2>
   </transition>
 </template>
 
@@ -17,12 +14,5 @@
 
 <!-- script -->
 <script>
-export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
+
 </script>

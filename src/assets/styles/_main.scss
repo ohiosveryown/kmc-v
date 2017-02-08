@@ -7,12 +7,81 @@ body {
   color: red;
 }
 
+// layout //
 .view-container {
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
+section {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  max-width: 140rem;
+  @include breakpoint(mdl) { flex-direction: row; width: 80vw; }
+}
+
+aside {
+  //border: 1px solid pink;
+  position: relative;
+  width: grid-width(12);
+  @include breakpoint(mdl) { width: grid-width(6); }
+}
+
+.aside-content {
+  position: relative;
+  @include breakpoint(mdl) { position: fixed; width: grid-width(4); }
+}
+
+main {
+  @include breakpoint(mdl) { width: grid-width(6); }
+}
+
+
+// blog styles //
+.blog-date {
+  @include breakpoint(mdl) { width: grid-width(1); margin: -0.4rem 4rem 0 0; }
+}
+
+.blog-content {
+  @include breakpoint(mdl) { width: grid-width(9); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// transitions //
 .fade-enter {
   opacity: 0;
 }
