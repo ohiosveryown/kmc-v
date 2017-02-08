@@ -1,0 +1,8 @@
+// animations //
+
+// mark reveal //
+@keyframes mark-reveal {
+  0%   { color: rgba($cloud,1); }
+  30%  { color: rgba($cloud,0); clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%); }
+  100% { color: rgba($cloud,0); clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+}
