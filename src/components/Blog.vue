@@ -140,4 +140,5 @@
   toggleClass = function(e) {
     (e).classList.toggle('move');
   }
+
 </script>
