@@ -88,6 +88,36 @@ figure:hover:after {
 }
 
 
+// lightbox //
+.lightbox {
+  display: none;
+}
+
+.lightbox.active {
+  display: block;
+}
+
+.lb-content {
+  background: #fff;
+  height: 400px;
+  width: 800px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.bg-overlay {
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+
 // blog styles //
 .blog-date {
   //margin-left: -1rem;

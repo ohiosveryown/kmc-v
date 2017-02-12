@@ -48,9 +48,9 @@
             <img class="br-3" src="../assets/images/test-img-sm.jpg" alt="">
           </figure>
           <!-- lightbox content -->
-          <div id="modal" class="modal">
-            <div class="card"></div>
-            <div onclick="toggleLB()" class="modal-overlay"></div>
+          <div id="lightbox" class="lightbox">
+            <div class="lb-content"></div>
+            <div onclick="toggleLB()" class="bg-overlay"></div>
           </div>
           <!-- post content -->
           <h2 class="measure-6 pt-3 mb-3">Blog Title—ipsum dolor sit amet, et summo vituperata mei.</h2>
@@ -94,41 +94,13 @@
     letter-spacing: -0.4rem;
   }
 
-  .modal {
-    display: none;
-  }
-
-  .modal.active {
-    display: block;
-  }
-
-  .card {
-    background: #fff;
-    height: 400px;
-    width: 800px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-
-  .modal-overlay {
-    background: rgba(0,0,0,0.8);
-    position: fixed;
-    top: 0; left: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 1;
-  }
-
 </style>
 
 
 <!-- script -->
 <script>
   toggleLB = function() {
-    document.getElementById("modal").classList.toggle("active");
-    //document.getElementsByTagName("body").classList.toggle("active");
+    document.getElementById("lightbox").classList.toggle("active");
+    document.getElementsByTagName("body").classList.toggle("active");
   }
 </script>
