@@ -43,11 +43,16 @@
         <article class="mb-4">
           <h4 class="mb-2 pt-0 border-t">december 25, 2017</h4>
           <!-- blog image -->
-          <!-- <img class=" blog-img mb-3" src="/images/blog-test.jpg" alt=""> -->
-          <figure>
+          <figure onclick="toggleLB()">
             <span>View Photo</span>
             <img class="br-3" src="../assets/images/test-img-sm.jpg" alt="">
           </figure>
+          <!-- lightbox content -->
+          <div id="modal" class="modal">
+            <div class="card"></div>
+            <div onclick="toggleLB()" class="modal-overlay"></div>
+          </div>
+          <!-- post content -->
           <h2 class="measure-6 pt-3 mb-3">Blog Title—ipsum dolor sit amet, et summo vituperata mei.</h2>
           <div class="flex-inline-mdl">
             <!-- drop date -->
@@ -58,13 +63,6 @@
               <p>Augue sonet et vel, posse affert efficiantur usu ut. Eu eam quem nonumy democritum, liber putent legendos eu ius.</p>
               <p>Ut nam civibus indoctum. Eum ne atqui primis. Quo no nulla quaestio. An ludus putant sea, id postea antiopam mea, ut omnis everti expetenda sit. Inani errem expetenda per ad, te adipisci perpetua per, nulla noluisse recteque quo id.</p>
               <p>Id usu scaevola assueverit temporibus, regione denique an nec, alia delenit laoreet vel etttttt.</p>
-              <div onclick="toggleClass(this)" class="toggle">
-                <div class="ball"></div>
-                <div class="track"></div>
-              </div>
-              <img onclick="toggleLB()" src="http://payload.cargocollective.com/1/0/31055/388119/nikelab_light_640.jpg" alt="" />
-
-<div id="card" class="card">
             </div>
           </div>
         </article>
@@ -82,95 +80,55 @@
 
 <!-- styles -->
 <style lang="scss" scoped>
-
-.logo { margin: 16vw auto auto; }
-  /*
-  @import "../assets/styles/_breakpoints.scss";
-
-  .blog-date {
-    @include breakpoint(mdl) { width: grid-width(1); margin: -1rem 4rem 0 0; }
-  }
-
-  .blog-content {
-    @include breakpoint(mdl) { width: grid-width(9); }
-  }
-  */
-
-  .blog-date { font-size: 6.4rem; font-style: italic; letter-spacing: -0.4rem; }
+  /* @import "../assets/styles/_breakpoints.scss"; */
 
   section { min-height: 300vh; }
 
-  .ball {
-    background: #f7f7f7;
-    border: 1px solid #9fb0b7;
-    border-radius: 100px;
-    height: 32px; width: 32px;
-    transform: translate3d(0,0,0);
-    transition: all 300ms cubic-bezier(0.680, -0.6, 0.265, 1.8);
+  .logo {
+    margin: 16vw auto auto;
   }
 
-  .track {
-    background: #9fb0b7;
-    border-radius: 100px;
-    height: 20px;
-    width: 56px;
-    position: relative;
-    top: -26px;
-    left: 4px;
-    z-index: -1;
-    box-shadow: none;
-    transition: all 250ms ease;
-    transition-delay: 100ms;
-    box-shadow: inset 0 0 0 0 #49bde4;
+  .blog-date {
+    font-size: 6.4rem;
+    font-style: italic;
+    letter-spacing: -0.4rem;
   }
 
-  .move {
-    .ball {
-      transform: translate3d(30px,0,0);
-    }
+  .modal {
+    display: none;
+  }
 
-    .track {
-      box-shadow: inset 0 0 0 10px #49bde4;
-    }
+  .modal.active {
+    display: block;
   }
 
   .card {
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  margin: auto;
-  z-index: 808;
-  //background: rgba(0,0,255,1);
-  background: #fff;
-  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.4);
-  border-radius: 4px;
-  height: 80vh;
-  width: 90%;
-  display: none;
-  animation-fill-mode: forwards;
-  animation: modalClose 0.75s;
-  will-change: transform;
-}
+    background: #fff;
+    height: 400px;
+    width: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
 
-.card.active {
-  display: block;
-  //transform-origin: center 10vh;
-  animation: modalOpen 550ms;
-  animation-timing-function: ease-in;
-  will-change: transform;
-  //animation-fill-mode: forwards;
-  //animation-direction: alternate;
-}
+  .modal-overlay {
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+  }
 
 </style>
 
 
 <!-- script -->
 <script>
-  toggleClass = function(e) {
-    (e).classList.toggle('move');
-  }
-
   toggleLB = function() {
-  document.getElementById("card").classList.toggle("active");
-}
+    document.getElementById("modal").classList.toggle("active");
+    //document.getElementsByTagName("body").classList.toggle("active");
+  }
 </script>
