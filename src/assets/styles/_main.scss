@@ -57,7 +57,7 @@ figure {
     color: $gold;
     top: 44%;
     transition: $ease;
-    z-index: 808;
+    z-index: $downstairs;
   }
 }
 
@@ -73,7 +73,7 @@ figure:after {
     content:'';
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: $basement;
     width: 100%;
     height: 100%;
     display: block;
@@ -98,23 +98,22 @@ figure:hover:after {
 }
 
 .lb-content {
+  img { max-height: 90vh; max-width: 90vw; }
   background: #fff;
-  height: 400px;
-  width: 800px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: $attic;
 }
 
 .bg-overlay {
-  background: rgba(0,0,0,0.8);
+  background: rgba($plum,0.94);
   position: fixed;
   top: 0; left: 0;
   height: 100vh;
   width: 100%;
-  z-index: 1;
+  z-index: $upstairs;
 }
 
 

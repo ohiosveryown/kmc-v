@@ -19,3 +19,10 @@ $spacing: 1.6rem;
 // easing //
 $ease: all 300ms ease;
 $ease-slow: all 800ms ease;
+
+// z-index //
+$attic: 4;
+$upstairs: 3;
+$downstairs: 2;
+$basement: 1;
+$crawlspace: -1;
