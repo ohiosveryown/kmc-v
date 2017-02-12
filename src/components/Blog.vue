@@ -55,12 +55,12 @@
             </div>
             <div onclick="toggleLB()" class="bg-overlay"></div>
           </div>
-          <!-- post content -->
+          <!-- post title -->
           <h2 class="measure-6 pt-3 mb-3">Blog Title—ipsum dolor sit amet, et summo vituperata mei.</h2>
           <div class="flex-inline-mdl">
             <!-- drop date -->
             <div class="blog-date">25</div>
-            <!-- blog content -->
+            <!-- post content -->
             <div class="blog-content">
               <p>Lorem ipsum dolor sit amet, mel at vocent docendi, ne sed tale theophrastus conclusionemque. Vix sententiae repudiandae an, no usu epicuri constituto, sed facilisi argumentum id. Nam prima petentium mnesarchum ex.</p>
               <p>Augue sonet et vel, posse affert efficiantur usu ut. Eu eam quem nonumy democritum, liber putent legendos eu ius.</p>

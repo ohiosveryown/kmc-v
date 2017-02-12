@@ -95,6 +95,9 @@ figure:hover:after {
 
 .lightbox.active {
   display: block;
+  //opacity: 0;
+  /* duration | timing function | delay | fill-mode | anim name */
+  //animation: 300ms ease 200ms forwards lightboxReveal;
 }
 
 .lb-content {
@@ -105,6 +108,9 @@ figure:hover:after {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: $attic;
+  opacity: 0;
+  /* duration | timing function | delay | fill-mode | anim name */
+  animation: 400ms ease 300ms forwards lightboxReveal;
 }
 
 .bg-overlay {
@@ -114,6 +120,8 @@ figure:hover:after {
   height: 100vh;
   width: 100%;
   z-index: $upstairs;
+  animation: bgReveal 200ms;
+  animation-timing-function: ease;
 }
 
 

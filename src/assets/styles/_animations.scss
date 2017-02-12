@@ -1,5 +1,17 @@
 // animations //
 
+// lightbox //
+@keyframes lightboxReveal {
+  0%    { opacity: 0; }
+  100%  { opacity: 100; }
+}
+
+@keyframes bgReveal {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
 // mark reveal //
 @keyframes mark-reveal {
   0%   { color: rgba($cloud,1); }
