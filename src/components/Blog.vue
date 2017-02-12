@@ -62,6 +62,9 @@
                 <div class="ball"></div>
                 <div class="track"></div>
               </div>
+              <img onclick="toggleLB()" src="http://payload.cargocollective.com/1/0/31055/388119/nikelab_light_640.jpg" alt="" />
+
+<div id="card" class="card">
             </div>
           </div>
         </article>
@@ -131,14 +134,43 @@
     }
   }
 
+  .card {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+  z-index: 808;
+  //background: rgba(0,0,255,1);
+  background: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.4);
+  border-radius: 4px;
+  height: 80vh;
+  width: 90%;
+  display: none;
+  animation-fill-mode: forwards;
+  animation: modalClose 0.75s;
+  will-change: transform;
+}
+
+.card.active {
+  display: block;
+  //transform-origin: center 10vh;
+  animation: modalOpen 550ms;
+  animation-timing-function: ease-in;
+  will-change: transform;
+  //animation-fill-mode: forwards;
+  //animation-direction: alternate;
+}
+
 </style>
 
 
 <!-- script -->
 <script>
-
   toggleClass = function(e) {
     (e).classList.toggle('move');
   }
 
+  toggleLB = function() {
+  document.getElementById("card").classList.toggle("active");
+}
 </script>
