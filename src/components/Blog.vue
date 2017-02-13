@@ -2,16 +2,18 @@
 <template>
   <!-- view transition -->
   <transition name="fade">
-
+  <!-- single wrapper for vue.js -->
   <div>
-
     <!-- layout wrapper -->
     <section>
       <!-- aside -->
       <aside>
         <div class="aside-content pt-0">
+          <!-- title -->
           <h4 class="border-b mb-1 pb-0">blog</h4>
+          <!-- description -->
           <h1 class="measure-8">Lorem ipsum dolor sit amet, et summo vituperata mei.</h1>
+          <!-- logo / glyph -->
           <img class="logo" src="../assets/images/test-logo.png" alt="">
         </div>
       </aside>
@@ -19,12 +21,13 @@
       <!-- main content -->
       <main>
 
+
         <!-- january 13 2017 -->
         <article class="mb-4">
           <h3 class="mb-1">blog</h3>
           <!-- date -->
           <h4 class="mb-2 pt-0 border-t">january 23, 2017</h4>
-          <!-- title -->
+          <!-- post title -->
           <h2 class="measure-6 mb-3">Blog Title—ipsum dolor sit amet, et summo vituperata mei.</h2>
           <div class="flex-inline-mdl">
             <!-- drop date -->
@@ -41,16 +44,18 @@
 
         <!-- december 25 2016 -->
         <article class="mb-4">
+          <!-- date -->
           <h4 class="mb-2 pt-0 border-t">december 25, 2017</h4>
           <!-- blog image -->
           <figure onclick="toggleLB()">
             <span>View Photo</span>
+            <!-- lightbox img sm -->
             <img class="br-3" src="../assets/images/test-img-sm.jpg" alt="">
           </figure>
           <!-- lightbox content -->
           <div id="lightbox" class="lightbox">
             <div class="lb-content">
-              <!-- lightbox img -->
+              <!-- lightbox img lg -->
               <img onclick="toggleLB()" class="br-3" src="../assets/images/test-img-v.jpg" alt="">
             </div>
             <div onclick="toggleLB()" class="bg-overlay"></div>
@@ -70,14 +75,16 @@
           </div>
         </article>
 
-      </main>
 
+      <!-- / main wrapper -->
+      </main>
+    <!-- / layout wrapper -->
     </section>
 
   </div>
-
+  <!-- / view transition -->
   </transition>
-
+<!-- / template -->
 </template>
 
 
@@ -86,10 +93,6 @@
   /* @import "../assets/styles/_breakpoints.scss"; */
 
   section { min-height: 300vh; }
-
-  .logo {
-    margin: 16vw auto auto;
-  }
 
   .blog-date {
     font-size: 6.4rem;

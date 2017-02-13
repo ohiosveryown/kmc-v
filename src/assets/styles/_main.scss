@@ -87,6 +87,10 @@ figure:hover:after {
     opacity: 1;
 }
 
+.logo {
+  margin: 16vw auto auto;
+}
+
 
 // lightbox //
 .lightbox {
@@ -95,13 +99,10 @@ figure:hover:after {
 
 .lightbox.active {
   display: block;
-  //opacity: 0;
-  /* duration | timing function | delay | fill-mode | anim name */
-  //animation: 300ms ease 200ms forwards lightboxReveal;
 }
 
 .lb-content {
-  img { max-height: 90vh; max-width: 90vw; }
+  img { max-height: 90vh; max-width: 90vw; box-shadow: 0 1rem 3rem 0 rgba(0,0,0,0.64); }
   background: #fff;
   position: fixed;
   top: 50%;
@@ -127,7 +128,6 @@ figure:hover:after {
 
 // blog styles //
 .blog-date {
-  //margin-left: -1rem;
   @include breakpoint(mdl) { width: grid-width(1); margin: -0.4rem 4rem 0 0; }
 }
 
