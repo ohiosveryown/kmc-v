@@ -92,7 +92,7 @@
 <style lang="scss" scoped>
   /* @import "../assets/styles/_breakpoints.scss"; */
 
-  section { min-height: 300vh; }
+  section { min-height: 400vh; }
 
   .blog-date {
     font-size: 6.4rem;
