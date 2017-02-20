@@ -38,7 +38,7 @@
                 <img class="br-3" src="../assets/images/test-img-sm.jpg" alt="">
               </figure>
 
-              <div id="sb1" class="sb-content">
+              <div id="sb1" class="sidebar">
                 <p>this is sidebar content and it goes here...</p>
               </div>
               <div onclick="toggleSB1()" id="ol1" class="sb-overlay"></div>

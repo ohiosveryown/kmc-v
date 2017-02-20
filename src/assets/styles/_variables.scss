@@ -19,6 +19,7 @@ $spacing: 1.6rem;
 // easing //
 $ease: all 300ms ease;
 $ease-slow: all 800ms ease;
+$ease-friction: all 300ms cubic-bezier(.8,.01,.2,1);
 
 // z-index //
 $attic: 4;
