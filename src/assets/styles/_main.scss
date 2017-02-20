@@ -141,6 +141,7 @@ figure:hover:after {
   position: fixed;
   top: 0; right: 0;
   background: $cloud;
+  box-shadow: -1.6rem 0 3.2rem -1.6rem rgba(0,0,0,1);
   color: $plum;
   height: 100vh;
   width: 50vw;
@@ -164,13 +165,13 @@ figure:hover:after {
   z-index: $crawlspace;
   opacity: 0;
   transition: $ease;
-  img { opacity: 0;  }
+  .sb-close-glyph { opacity: 0; }
 }
 
 .sb-overlay.active {
   z-index: $upstairs;
   opacity: 1;
-  img { animation: 400ms ease 600ms forwards reveal; }
+  .sb-close-glyph { animation: 400ms ease 600ms forwards reveal; }
 }
 
 .sb-close-glyph {
@@ -179,6 +180,7 @@ figure:hover:after {
   top: 45%;
   left: 20%;
   transform: translate(-20%, -20%);
+  text-align: center;
 }
 
 

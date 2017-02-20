@@ -42,7 +42,10 @@
                 <p>this is sidebar content and it goes here...</p>
               </div>
               <div onclick="toggleSB1()" id="ol1" class="sb-overlay">
-                <img class="sb-close-glyph" src="../assets/images/close-glyph.png" alt="">
+                <div class="sb-close-glyph">
+                  <img src="../assets/images/close-glyph.png" alt="">
+                  <h3 class="uc pt-2">close</h3>
+                </div>
               </div>
 
 
