@@ -38,24 +38,27 @@
                 <img class="br-3" src="../assets/images/test-img-sm.jpg" alt="">
               </figure>
 
+              <!-- sidebar content -->
               <div id="sb1" class="sidebar">
-                <p>this is sidebar content and it goes here...</p>
-              </div>
-              <div onclick="toggleSB1()" id="ol1" class="sb-overlay">
-                <div class="sb-close-glyph">
-                  <img src="../assets/images/close-glyph.png" alt="">
-                  <h3 class="uc pt-2">close</h3>
+                <div class="sb-content">
+                  <img class="br-3 mb-2" src="../assets/images/test-img-sm.jpg" alt="">
+                  <h5 class="ls-1">$245.00</h5>
+                  <h2>Piece Title #1</h2>
+                  <div class="sb-details pt-2">
+                    <p>Lorem ipsum dolor sit amet, mel at vocent docendi, ne sed tale theophrastus conclusionemque. Vix sententiae repudiandae an, no usu epicuri constituto, sed facilisi argumentum id. Nam prima petentium mnesarchum ex.</p>
+                    <button class="purchase-btn uc">purchase</button>
+                  </div>
                 </div>
               </div>
 
-
-              <!--
-              <div id="sb1" class="sidebar">
-                <p>this is sidebar content and it goes here.</p>
+              <!-- bg overlay -->
+              <div onclick="toggleSB1()" id="ol1" class="sb-overlay">
+                <div class="sb-close-glyph">
+                  <img src="../assets/images/close-glyph.png" alt="">
+                  <h5 class="uc pt-2">close</h5>
+                </div>
               </div>
-              <div onclick="toggleSB1()" id="ol1" class="bg-overlay"></div>
-              <p>Lorem ipsum dolor sit amet, mel at vocent docendi, ne sed tale theophrastus conclusionemque. Vix sententiae repudiandae an, no usu epicuri constituto, sed facilisi argumentum id. Nam prima petentium mnesarchum ex.</p>
-              -->
+
             </div>
 
         </article>

@@ -58,6 +58,7 @@
               <!-- lightbox img lg -->
               <img onclick="toggleLB()" class="br-3" src="../assets/images/test-img-v.jpg" alt="">
             </div>
+            <!-- bg overlay -->
             <div onclick="toggleLB()" class="bg-overlay"></div>
           </div>
           <!-- post title -->
