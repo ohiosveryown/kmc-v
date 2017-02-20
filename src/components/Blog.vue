@@ -24,7 +24,7 @@
 
         <!-- january 13 2017 -->
         <article class="mb-4">
-          <h3 class="mb-1">blog</h3>
+          <h3 class="mb-1 uc">blog</h3>
           <!-- date -->
           <h4 class="mb-2 pt-0 border-t">january 23, 2017</h4>
           <!-- post title -->

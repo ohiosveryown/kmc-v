@@ -6,7 +6,10 @@ h4 { font-size: 1.4rem; font-style: italic; }
 p  { font-size: 1.8rem; margin-bottom: $spacing*1.4; }
 
 
-//measures //
+// casing //
+.uc { text-transform: uppercase; }
+
+// measures //
 .measure-5 { @include breakpoint(mdl) { max-width: 50%; } }
 .measure-6 { @include breakpoint(mdl) { max-width: 60%; } }
 .measure-7 { @include breakpoint(mdl) { max-width: 70%; } }
