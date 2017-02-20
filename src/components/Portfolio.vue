@@ -38,15 +38,17 @@
                 <img class="br-3" src="../assets/images/test-img-sm.jpg" alt="">
               </figure>
 
-              <!-- lightbox content -->
-              <div id="sb1" class="lightbox">
-                <div class="lb-content">
-                  <!-- lightbox img lg -->
-                  <img onclick="toggleSB1()" class="br-3" src="../assets/images/test-img.jpg" alt="">
-                </div>
-                <div onclick="toggleSB1()" class="bg-overlay"></div>
+              <div id="sb1" class="sb-content">
+                <p>this is sidebar content and it goes here...</p>
               </div>
-              <!-- optional copy
+              <div onclick="toggleSB1()" id="ol1" class="sb-overlay"></div>
+
+
+              <!--
+              <div id="sb1" class="sidebar">
+                <p>this is sidebar content and it goes here.</p>
+              </div>
+              <div onclick="toggleSB1()" id="ol1" class="bg-overlay"></div>
               <p>Lorem ipsum dolor sit amet, mel at vocent docendi, ne sed tale theophrastus conclusionemque. Vix sententiae repudiandae an, no usu epicuri constituto, sed facilisi argumentum id. Nam prima petentium mnesarchum ex.</p>
               -->
             </div>
@@ -76,6 +78,7 @@
 <!-- script -->
 <script>
   toggleSB1 = function() {
+    document.getElementById("ol1").classList.toggle("active");
     document.getElementById("sb1").classList.toggle("active");
   }
 </script>

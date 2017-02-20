@@ -53,7 +53,7 @@
             <img class="br-3" src="../assets/images/test-img-sm.jpg" alt="">
           </figure>
           <!-- lightbox content -->
-          <div id="lightbox" class="lightbox">
+          <div id="lb1" class="lightbox">
             <div class="lb-content">
               <!-- lightbox img lg -->
               <img onclick="toggleLB()" class="br-3" src="../assets/images/test-img-v.jpg" alt="">
@@ -105,6 +105,6 @@
 <!-- script -->
 <script>
   toggleLB = function() {
-    document.getElementById("lightbox").classList.toggle("active");
+    document.getElementById("lb1").classList.toggle("active");
   }
 </script>
