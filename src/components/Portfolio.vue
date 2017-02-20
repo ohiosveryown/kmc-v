@@ -32,11 +32,20 @@
             <!-- piece content -->
             <div class="portfolio-content">
               <!-- sm image -->
-              <figure onclick="toggleLB()">
+              <figure onclick="toggleSB1()">
                 <span>View Piece</span>
-                <!-- lightbox img sm -->
+                <!-- sidebar img sm -->
                 <img class="br-3" src="../assets/images/test-img-sm.jpg" alt="">
               </figure>
+
+              <!-- lightbox content -->
+              <div id="sb1" class="lightbox">
+                <div class="lb-content">
+                  <!-- lightbox img lg -->
+                  <img onclick="toggleSB1()" class="br-3" src="../assets/images/test-img.jpg" alt="">
+                </div>
+                <div onclick="toggleSB1()" class="bg-overlay"></div>
+              </div>
               <!-- optional copy
               <p>Lorem ipsum dolor sit amet, mel at vocent docendi, ne sed tale theophrastus conclusionemque. Vix sententiae repudiandae an, no usu epicuri constituto, sed facilisi argumentum id. Nam prima petentium mnesarchum ex.</p>
               -->
@@ -66,5 +75,7 @@
 
 <!-- script -->
 <script>
-
+  toggleSB1 = function() {
+    document.getElementById("sb1").classList.toggle("active");
+  }
 </script>
