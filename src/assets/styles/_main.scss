@@ -144,11 +144,14 @@ figure:hover:after {
   box-shadow: -1.6rem 0 3.2rem -1.6rem rgba(0,0,0,1);
   color: $plum;
   height: 100vh;
-  width: 50vw;
+  width: 90vw;
   z-index: $attic;
-  transform: translatex(50vw);
+  transform: translatex(100vw);
   transition: $ease-friction;
   will-change: transform;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  @include breakpoint(mdl) { width: 50vw; transform: translatex(70vw); }
 }
 
 .sidebar.active {
@@ -171,7 +174,7 @@ figure:hover:after {
 .sb-overlay.active {
   z-index: $upstairs;
   opacity: 1;
-  .sb-close-glyph { animation: 400ms ease 600ms forwards reveal; }
+  .sb-close-glyph { animation: 800ms ease 600ms forwards reveal; }
 }
 
 .sb-close-glyph {
@@ -185,14 +188,18 @@ figure:hover:after {
 
 .sb-content {
   h2 { color: $plum; }
-  padding: 3rem;
+  padding: 1.6rem;
+  @include breakpoint(md) { padding: 3rem; };
 }
 
 .sb-details {
   margin: 0 auto;
-  width: grid-width(8);
+  width: grid-width(12);
+  @include breakpoint(md) { width: grid-width(9); };
 }
 
+
+// portfolio styles //
 .purchase-btn {
   border: none;
   background: $pink;

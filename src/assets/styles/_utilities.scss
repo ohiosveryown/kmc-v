@@ -15,10 +15,23 @@
 .pt-3 { padding-top: $spacing*3; }
 .pt-4 { padding-top: $spacing*4; }
 
+
 // layout //
 .flex-inline-mdl { @include breakpoint(mdl) { display: flex; } }
+
 
 // borders //
 .border-b { border-bottom: 1px solid $cloud; }
 .border-t { border-top: 1px solid $cloud; }
 .br-3 { border-radius: 0.3rem; }
+
+
+// shadows //
+.bs-1 { box-shadow: 0 5.6rem 6rem -4rem rgba(0,0,0,0.4); }
+
+
+// display //
+.show-md {
+  display: none;
+  @include breakpoint(md) { display: block; }
+}

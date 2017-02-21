@@ -24,13 +24,15 @@
         <!-- painting -->
         <article class="mb-4">
           <h3 class="mb-1 uc">portfolio</h3>
-          <!-- date -->
+
+          <!-- section -->
           <h4 class="mb-2 pt-0 border-t">painting</h4>
+
           <!-- piece title -->
-          <h2 class="measure-6 pt-3 mb-3">Painting Piece Title #1</h2>
+          <h2 class="measure-6 pt-3 mb-1">Painting Piece Title #1</h2>
 
             <!-- piece content -->
-            <div class="portfolio-content">
+            <div class="portfolio-content mb-3">
               <!-- sm image -->
               <figure onclick="toggleSB1()">
                 <span>View Piece</span>
@@ -41,11 +43,11 @@
               <!-- sidebar content -->
               <div id="sb1" class="sidebar">
                 <div class="sb-content">
-                  <img class="br-3 mb-2" src="../assets/images/test-img-sm.jpg" alt="">
-                  <h5 class="ls-1">$245.00</h5>
+                  <img class="br-3 mb-3 bs-1" src="../assets/images/test-img-sm.jpg" alt="">
+                  <h5 class="ls-1 mb-0">$245.00</h5>
                   <h2>Piece Title #1</h2>
                   <div class="sb-details pt-2">
-                    <p>Lorem ipsum dolor sit amet, mel at vocent docendi, ne sed tale theophrastus conclusionemque. Vix sententiae repudiandae an, no usu epicuri constituto, sed facilisi argumentum id. Nam prima petentium mnesarchum ex.</p>
+                    <p>Lorem ipsum dolor sit amet, mel at vocent docendi, ne sed tale theophrastus conclusionemque. Vix sententiae repudiandae an, no usu epicuri constituto, sed facilisi argumentum id.</p>
                     <button class="purchase-btn uc">purchase</button>
                   </div>
                 </div>
@@ -67,7 +69,7 @@
       </main>
     <!-- / layout wrapper -->
     </section>
-
+    <div class="bg-01"></div>
   </div>
   <!-- / view transition -->
   </transition>
@@ -78,6 +80,16 @@
 <!-- styles -->
 <style lang="scss" scoped>
   /* @import "../assets/styles/_breakpoints.scss"; */
+  .bg-01 {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background: url("../assets/images/bg-img-01.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   section { min-height: 400vh; }
 
 </style>
