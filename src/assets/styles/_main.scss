@@ -1,6 +1,6 @@
 // main styles //
 body {
-  background: $plum;
+  //background: $plum;
 }
 
 .router-link-active {
@@ -167,7 +167,7 @@ figure:hover:after {
   width: 100%;
   z-index: $crawlspace;
   opacity: 0;
-  transition: $ease;
+  transition: $ease-slow;
   .sb-close-glyph { opacity: 0; }
 }
 
