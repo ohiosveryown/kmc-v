@@ -88,7 +88,6 @@
     z-index: -1;
     background: url("../assets/images/bg-img-01.jpg") no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
   }
   section { min-height: 400vh; }
 

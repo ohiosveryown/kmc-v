@@ -1,6 +1,6 @@
 // main styles //
 body {
-  //background: $plum;
+  background: $plum;
 }
 
 .router-link-active {
@@ -128,7 +128,7 @@ figure:hover:after {
 
 // blog styles //
 .blog-date {
-  @include breakpoint(mdl) { width: grid-width(1); margin: -0.4rem 4rem 0 0; }
+  @include breakpoint(mdl) { width: grid-width(1); margin: -1.8rem 6rem 0 0; }
 }
 
 .blog-content {
