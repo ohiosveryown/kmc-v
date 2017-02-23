@@ -149,6 +149,7 @@ figure:hover:after {
   transform: translatex(100vw);
   transition: $ease-friction;
   will-change: transform;
+  // scrolling on piece detail, may not be necessary
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   @include breakpoint(mdl) { width: 50vw; transform: translatex(70vw); }
