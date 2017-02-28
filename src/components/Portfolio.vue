@@ -89,6 +89,7 @@
     background: url("../assets/images/bg-img-01.jpg") no-repeat center center fixed;
     background-size: cover;
   }
+
   section { min-height: 400vh; }
 
 </style>
