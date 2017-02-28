@@ -47,7 +47,7 @@
                   <h5 class="ls-1 mb-0">$245.00</h5>
                   <h2>Piece Title #1</h2>
                   <div class="sb-details pt-2">
-                    <p>Lorem ipsum dolor sit amet, mel at vocent docendi, ne sed tale theophrastus conclusionemque. Vix sententiae repudiandae an, no usu epicuri constituto, sed facilisi argumentum id.</p>
+                    <p>Lorem ipsum dolor sit amet, mel at vocent docendi, ne sed tale theophrastus conclusionemque. Vix sententiae repudiandae an, no usu epicuri constituto, sed facilisi argumentumss id.</p>
                     <button class="purchase-btn uc">purchase</button>
                   </div>
                 </div>
