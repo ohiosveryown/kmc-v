@@ -1,3 +1,3 @@
 # kmc-v
 
-> A Vue.js project
+kmc v2 (chartreuse) – built on vue.js
